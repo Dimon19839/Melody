@@ -1,0 +1,107 @@
+@import mixins
+@import media
+@import sprites
+@import normalize
+
+
+$font-weight: 400
+$font-size: 16px
+$line-height: 1.4
+$font-family: Roboto
+$color: #000
+$wrapper: 1280px
+
+
+body 	
+	color: $color
+	font: $font-weight $font-size/$line-height $font-family, Arial, sans-serif
+	background: #FFF
+
+/* MAIN STYLES
+/* ================================================ */
+
+.main-wrapper
+	padding: 0
+	min-width: 320px
+	position: relative 
+	overflow: hidden
+	opacity: 1
+	min-height: 100% 
+
+.wrapper 
+	max-width: $wrapper
+	padding: 0 40px 0 40px
+	margin: 0 auto
+	position: relative
+
+
+img
+	display: block
+	max-width: 100%
+
+span 
+	display: inline-block
+
+/* text position */
+
+.text-left
+	text-align: left !important
+
+.text-center
+	text-align: center !important
+
+.text-right
+	text-align: right !important
+
+
+/* Icons
+     ====================== */
+.ic 
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	// background: $icons no-repeat
+
+// @each $i in next, prev
+// 	.ic--#{$i}
+// 		+s(ic--#{$i})
+
+
+.header
+	background-color: #635854
+	border-bottom: 4px solid #3596F5
+	box-sizing: border-box
+	padding: 12px  0
+	&-wrap
+		display: flex
+		justify-content: space-between 
+		align-items: center 
+.menu
+	display: flex
+	list-style: none 
+	&-link
+		font-style: normal
+		font-weight: normal
+		font-size: 16px
+		line-height: 19px
+		text-align: center
+		color: #FFFFFF
+		display: block
+		padding: 0 40px
+	&-contact
+		display: grid
+		text-align: right
+		margin-bottom: 4px
+.contact
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 16px
+	text-align: center
+	color: #FFFFFF
+.telephon
+	font-style: normal
+	font-weight: bold
+	font-size: 17px
+	line-height: 20px
+	color: #FFFFFF
